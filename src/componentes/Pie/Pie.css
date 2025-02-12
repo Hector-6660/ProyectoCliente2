@@ -1,0 +1,56 @@
+footer {
+    background-color: rgb(54,79,89);
+    color: white;
+    text-align: center;
+}
+
+.iconoRedSocial {
+    width: 2%;
+}
+
+.finalFooter {
+    display: inline-block;
+    background-color: rgb(54,79,89);
+    color: white;
+    text-align: center;
+}
+
+.logoFooter {
+    margin-top: 10px;
+    width: 5%;
+    float: left;
+}
+
+.textoFooter {
+    width: 90%;
+    float: left;
+}
+
+@media (max-width: 992px) {
+    .iconoRedSocial {
+        width: 3%;
+    }
+
+    .logoFooter {
+        width: 10%;
+    }
+
+    .textoFooter {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .iconoRedSocial {
+        width: 5%;
+    }
+
+    .logoFooter {
+        width: 20%;
+        float: none;
+    }
+
+    .textoFooter {
+        width: 100%;
+    }
+}
