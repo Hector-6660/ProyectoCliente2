@@ -1,13 +1,10 @@
 import React from 'react';
-import Home from '../Home/Home';
-import { Link } from 'react-router-dom';
 
 const CentroEducativo = () => {
 
     return (
         <div>
-            <h1>CENTROEDUCATIVO</h1>
-            <Home></Home>
+            <h3>CENTROEDUCATIVO</h3>
         </div>
     )
 }

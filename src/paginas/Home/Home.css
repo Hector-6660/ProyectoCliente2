@@ -1,17 +1,17 @@
+.imagenes {
+  margin: 200px 0px 200px 0px;
+}
+
 ul.menu {
   list-style: none;
-  margin: 0;
   padding: 0;
+  display: flex;
+  text-align: center;
 }
 
 ul.menu li {
   float: left;
-  width: 20%;
-  margin: auto;
-}
-
-ul.menu {
-  overflow: hidden;
+  width: 50%;
 }
 
 li img {
@@ -21,4 +21,19 @@ li img {
 
 link:hover {
   color: red;
+}
+
+@media (max-width: 768px) {
+  .imagenes {
+    margin: 100px 0px 100px 0px;
+  }
+
+  ul.menu {
+    flex-direction: column;
+  }
+
+  ul.menu li {
+    width: 100%;
+    margin-top: 20px;
+  }
 }

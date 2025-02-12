@@ -1,14 +1,20 @@
 .cabecera {
-    background-color: rgb(211, 211, 211);
-    color :rgb(255, 165, 92);
+    background-color: rgb(248,249,251);
+    color :rgb(244,134,37);
     padding: 10px;
-    display: inline-block;
+    align-items: center;
+    display: flex;
     text-align: center;
 }
 
+a {
+    width: 10%;
+}
+
 .logoMP {
-    width: 8%;
+    width: 100%;
     float: left;
+    padding-right: 0px;
 }
 
 h1 {
@@ -18,18 +24,22 @@ h1 {
 
 .imagenIdioma {
     width: 3%;
-    margin: 10px;
+    margin: 5px;
 }
 
 @media (max-width: 992px) {
     .logoMP {
-        width: 10%;
+        width: 100%;
     }
 }
 
 @media (max-width: 768px) {
+    a{
+        width: 20%;
+    }
+
     .logoMP {
-        width: 25%;
+        width: 100%;
     }
 
     h1 {

@@ -4,6 +4,15 @@ footer {
     text-align: center;
 }
 
+.enlaceWebC3 {
+    color: white;
+    text-decoration: none;
+}
+
+.enlaceWebC3:hover {
+    color: rgb(255, 165, 92);
+}
+
 .iconoRedSocial {
     width: 2%;
 }
@@ -24,6 +33,7 @@ footer {
 .textoFooter {
     width: 90%;
     float: left;
+    display: block;
 }
 
 @media (max-width: 992px) {

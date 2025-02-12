@@ -14,7 +14,12 @@ function App() {
         <Cabecera></Cabecera>
 
         <Routes>
-            <Route path="/" element={<Home></Home>}>     
+            <Route path="/" element={
+              <>
+                <Home></Home>
+                <Pie></Pie>
+              </>
+              }>
             </Route>
             <Route path="/empresa" element={<Empresa></Empresa>}>     
             </Route>
