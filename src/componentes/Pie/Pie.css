@@ -4,13 +4,34 @@ footer {
     text-align: center;
 }
 
+.contadorEmpProAlu {
+    display: flex;
+    background-color: rgb(244,134,37);
+    color: white;
+    width: 75%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.contadorEmpProAlu h4 {
+    margin: 3px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contadorEmpProAlu p {
+    font-size: 50px;
+    flex-direction: column;
+    align-items: center;
+}
+
 .enlaceWebC3 {
     color: white;
     text-decoration: none;
 }
 
 .enlaceWebC3:hover {
-    color: rgb(255, 165, 92);
+    color: rgb(244,134,37);
 }
 
 .iconoRedSocial {

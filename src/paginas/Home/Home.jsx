@@ -14,6 +14,7 @@ const Home = () => {
                     <li><Link to="/alumno"><img src="/src/assets/student - copia.jpg"/></Link></li>
                 </ul>
             </div>
+            <Pie></Pie>
         </>
     )
 }

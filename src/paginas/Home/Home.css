@@ -14,13 +14,13 @@ ul.menu li {
   width: 50%;
 }
 
-li img {
-  width: 75%;
-  border: 1px solid #000000;
+ul.menu li img:hover {
+  border: 5px solid rgb(244,134,37);
 }
 
-link:hover {
-  color: red;
+ul.menu li img {
+  width: 75%;
+  border: 5px solid white;
 }
 
 @media (max-width: 768px) {

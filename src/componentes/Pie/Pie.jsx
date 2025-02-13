@@ -6,6 +6,21 @@ const Pie = () => {
 
     return (
         <footer>
+            <div className='contadorEmpProAlu'>
+                <div>
+                    <h4>Empresas</h4>
+                    <p>0</p>
+                </div>
+                <div>
+                    <h4>Proyectos</h4>
+                    <p>0</p>
+                </div>
+                <div>
+                    <h4>Alumnos</h4>
+                    <p>0</p>
+                </div>
+            </div>
+
             <a href='https://cifpcarlos3.es/es' className='enlaceWebC3'><h2>CIFP Carlos III</h2></a>
             <p>C/ Carlos III, 30201 - Cartagena | 30019702@murciaeduca.es | 968321301</p>
 
