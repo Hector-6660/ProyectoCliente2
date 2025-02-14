@@ -1,24 +1,13 @@
 import React from 'react';
 import './Pie.css';
-import { Link } from 'react-router-dom';
+import ContadorEmpProAlu from '../ContadorEmpProAlu/ContadorEmpProAlu';
 
 const Pie = () => {
 
     return (
         <footer>
             <div className='contadorEmpProAlu'>
-                <div>
-                    <h4>Empresas</h4>
-                    <p>0</p>
-                </div>
-                <div>
-                    <h4>Proyectos</h4>
-                    <p>0</p>
-                </div>
-                <div>
-                    <h4>Alumnos</h4>
-                    <p>0</p>
-                </div>
+                <ContadorEmpProAlu></ContadorEmpProAlu>
             </div>
 
             <a href='https://cifpcarlos3.es/es' className='enlaceWebC3'><h2>CIFP Carlos III</h2></a>
@@ -32,7 +21,7 @@ const Pie = () => {
 
             <div className='finalFooter'>
                 <img src='/src/assets/mp-logoReves.png' className='logoFooter'></img>
-                <p className='textoFooter'><strong>Marca Personal FP</strong> | Diseño Web CFGS Desarrollo de Aplicaciones Web 2023</p>
+                <p className='textoFooter'><strong>Marca Personal FP</strong> | Diseño Web CFGS Desarrollo de Aplicaciones Web © 2023</p>
             </div>
         </footer>
     )
