@@ -1,15 +1,26 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 
 const ContadorEmpProAlu = () => {
     const [numEmpresas, setNumEmpresas] = useState(0);
+    const [numProyectos, setNumProyectos] = useState(0);
+    const [numAlumnos, setNumAlumnos] = useState(0);
 
-    useEffect(() => {
-        fetch('http://marcapersonalfp.test/api/v1/empresas/count')
-            .then(response => response.json())
-            .then(data => setNumEmpresas(data.numEmpresas))
-            .catch(error => console.error('Error fetching data:', error));
-    }, []);
+    const apiEmp = 'http://marcapersonalfp.test/api/v1/empresas/count';
+    const apiPro = 'http://marcapersonalfp.test/api/v1/proyectos/count';
+    const apiAlu = 'http://marcapersonalfp.test/api/v1/users/count';
+
+    fetch(apiEmp)
+        .then(response => response.json())
+        .then(data => setNumEmpresas(data.count))
+
+    fetch(apiPro)
+        .then(response => response.json())
+        .then(data => setNumProyectos(data.count))
+
+    fetch(apiAlu)
+        .then(response => response.json())
+        .then(data => setNumAlumnos(data.count))
 
     return (
         <>
@@ -19,11 +30,11 @@ const ContadorEmpProAlu = () => {
             </div>
             <div>
                 <h4>Proyectos</h4>
-                <p>0</p>
+                <p>{numProyectos}</p>
             </div>
             <div>
                 <h4>Alumnos</h4>
-                <p>0</p>
+                <p>{numAlumnos}</p>
             </div>
         </>
     )
