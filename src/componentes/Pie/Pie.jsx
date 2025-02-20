@@ -3,7 +3,6 @@ import './Pie.css';
 import ContadorEmpProAlu from '../ContadorEmpProAlu/ContadorEmpProAlu';
 
 const Pie = () => {
-
     return (
         <footer>
             <div className='contadorEmpProAlu'>
@@ -25,7 +24,6 @@ const Pie = () => {
             </div>
         </footer>
     )
-
 }
 
 export default Pie;

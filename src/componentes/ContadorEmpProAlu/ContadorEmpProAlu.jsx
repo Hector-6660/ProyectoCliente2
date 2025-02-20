@@ -1,7 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState , useContext } from 'react';
+import IdiomaContext from "../../contextos/IdiomaContext";
+import idiomas from "../../mocks/mock-idiomas";
 
 
 const ContadorEmpProAlu = () => {
+    const idioma = useContext(IdiomaContext);
+
     const [numEmpresas, setNumEmpresas] = useState(0);
     const [numProyectos, setNumProyectos] = useState(0);
     const [numAlumnos, setNumAlumnos] = useState(0);
@@ -25,20 +29,19 @@ const ContadorEmpProAlu = () => {
     return (
         <>
             <div>
-                <h4>Empresas</h4>
+                <h4>{idiomas[idioma].contador.cont1}</h4>
                 <p>{numEmpresas}</p>
             </div>
             <div>
-                <h4>Proyectos</h4>
+                <h4>{idiomas[idioma].contador.cont2}</h4>
                 <p>{numProyectos}</p>
             </div>
             <div>
-                <h4>Alumnos</h4>
+                <h4>{idiomas[idioma].contador.cont3}</h4>
                 <p>{numAlumnos}</p>
             </div>
         </>
     )
-
 }
 
 export default ContadorEmpProAlu;

@@ -14,8 +14,13 @@ ul.menu li {
   width: 50%;
 }
 
+ul.menu li img {
+  transition: all 0.3s ease-in-out 0s;
+}
+
 ul.menu li img:hover {
   border: 5px solid rgb(244,134,37);
+  transition: all 0.3s ease-in-out 0s;
 }
 
 ul.menu li img {

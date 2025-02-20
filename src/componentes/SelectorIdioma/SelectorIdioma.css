@@ -1,0 +1,24 @@
+.botonesIdiomas {
+    display: flex;
+    width: 10%;
+}
+
+.botonIdioma {
+    width: 100%;
+    margin-right: 10%;
+}
+
+.imagenIdioma {
+    width: 100%;
+    margin: 5px;
+}
+
+@media (max-width: 768px) {
+    .botonesIdiomas {
+        width: 20%;
+    }
+
+    .botonIdioma {
+        width: 100%;
+    }
+}
