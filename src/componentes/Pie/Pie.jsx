@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Pie.css';
 import ContadorEmpProAlu from '../ContadorEmpProAlu/ContadorEmpProAlu';
+import IdiomaContext from '../../contextos/IdiomaContext';
+import idiomas from '../../mocks/mock-idiomas';
 
 const Pie = () => {
+    const idioma = useContext(IdiomaContext);
+
     return (
         <footer>
             <div className='contadorEmpProAlu'>
@@ -20,7 +24,7 @@ const Pie = () => {
 
             <div className='finalFooter'>
                 <img src='/src/assets/mp-logoReves.png' className='logoFooter'></img>
-                <p className='textoFooter'><strong>Marca Personal FP</strong> | Diseño Web CFGS Desarrollo de Aplicaciones Web © 2023</p>
+                <p className='textoFooter'><strong>Marca Personal FP</strong> | {idiomas[idioma].modulo.mdl1}</p>
             </div>
         </footer>
     )
