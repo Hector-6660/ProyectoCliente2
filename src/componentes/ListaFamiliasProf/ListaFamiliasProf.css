@@ -1,0 +1,10 @@
+.estiloFiltro {
+    background-color: #ffffff;
+    padding-top: 1px;
+    padding-bottom:3%;
+}
+
+.filtro {
+    display: flex;
+    flex-wrap: wrap;
+}

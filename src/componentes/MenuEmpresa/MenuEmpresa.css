@@ -1,0 +1,19 @@
+.menuEmpresa {
+    list-style: none;
+    display:flex;
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+.menuEmpresa li {
+    margin-right: 15px;
+}
+
+.menuEmpresa li:first-child .elemento {
+    color: rgb(244,134,37);
+}
+
+.elemento {
+    text-decoration: none;
+    color: black;
+}

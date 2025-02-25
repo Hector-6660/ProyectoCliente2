@@ -1,11 +1,12 @@
 import React from 'react';
+import MenuEmpresa from '../../componentes/MenuEmpresa/MenuEmpresa';
 
 const Empresa = () => {
 
     return (
-        <div>
-            <h3>EMPRESA</h3>
-        </div>
+        <>
+            <MenuEmpresa></MenuEmpresa>
+        </>
     )
 }
 
