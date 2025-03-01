@@ -5,8 +5,7 @@ import './ListaFamiliasProf.css';
 const ListaFamiliasProf = () => {
     const [familias, setFamilias] = useState([]);
 
-    const apiFamProf = 'http://marcapersonalfp.test/api/v1/familias_profesionales/nombre';
-    
+    const apiFamProf = 'http://marcapersonalfp.test/api/v1/familias_profesionales';
 
     useEffect(() => {
         fetch(apiFamProf)

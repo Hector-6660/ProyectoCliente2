@@ -8,7 +8,7 @@ const BusquedaAlumnos = () => {
     return (
         <>
             <MenuEmpresa></MenuEmpresa>
-            <h2>Búsqueda de Alumnos</h2>
+            <h2>Busca a tus Alumnos</h2>
             <ListaPerfilesCompetenciales></ListaPerfilesCompetenciales>
             <ListaFamiliasProf></ListaFamiliasProf>
         </>

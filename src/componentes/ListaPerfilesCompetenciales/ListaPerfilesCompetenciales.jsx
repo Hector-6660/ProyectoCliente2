@@ -4,7 +4,7 @@ import BotonLista from '../BotonLista/BotonLista';
 const ListaFamiliasProf = () => {
     const [competencias, setCompetencias] = useState([]);
 
-    const apiPerfComp = 'http://marcapersonalfp.test/api/v1/competencias/nombre';
+    const apiPerfComp = 'http://marcapersonalfp.test/api/v1/competencias';
     
 
     useEffect(() => {
@@ -15,7 +15,7 @@ const ListaFamiliasProf = () => {
 
     return (
         <div className='estiloFiltro'>
-            <h3>Filtra por familia profesional</h3>
+            <h3>Filtra por perfil competencial</h3>
             <div className='filtro'>
                 {competencias.map((competencia, index) => (
                     <BotonLista key={index} nombre={competencia.nombre} />
