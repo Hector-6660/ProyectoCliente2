@@ -11,12 +11,21 @@ import Alumno from './paginas/Alumno/Alumno';
 import IdiomaContext from './contextos/IdiomaContext';
 
 function App() {
-
   const [idioma, setIdioma] = useState('es');
+  const [familiaCodigo, setFamiliaCodigo] = useState('');
+  const [competenciaNombre, setCompetenciaNombre] = useState('');
 
   const manejarSeleccion = (nuevoIdioma) => {
     setIdioma(nuevoIdioma);
   };
+
+  const handleFamiliaCodigo = (codigoFamilia) => {
+    setFamiliaCodigo(codigoFamilia);
+  }
+
+  const handleCompetenciaNombre = (nombreCompetencia) => {
+    setCompetenciaNombre(nombreCompetencia);
+  }
 
   return (
     <div>
@@ -28,8 +37,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home></Home>}></Route>
           <Route path="/empresa" element={<Empresa></Empresa>}></Route>
-          <Route path="/empresa/proyectos" element={<BusquedaProyectos></BusquedaProyectos>}></Route>
-          <Route path="/empresa/alumnos" element={<BusquedaAlumnos></BusquedaAlumnos>}></Route>
+          <Route path="/empresa/proyectos" element={<BusquedaProyectos handleFamiliaCodigo={handleFamiliaCodigo} familiaCodigo={familiaCodigo}></BusquedaProyectos>}></Route>
+          <Route path="/empresa/alumnos" element={<BusquedaAlumnos handleCompetenciaNombre={handleCompetenciaNombre} handleFamiliaCodigo={handleFamiliaCodigo} familiaCodigo={familiaCodigo} competenciaNombre={competenciaNombre}></BusquedaAlumnos>}></Route>
           <Route path="/centroeducativo" element={<CentroEducativo></CentroEducativo>}></Route>
           <Route path="/alumno" element={<Alumno></Alumno>}></Route>
         </Routes>

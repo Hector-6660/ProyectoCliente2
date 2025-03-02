@@ -1,9 +1,13 @@
-.mincardProy {
-    display: flex;
+.mincardAlum {
     margin: 10px;
     background-color: #f5f5f5;
     width: 23%;
     border-radius: 10px;
+}
+
+.mincardAlumContenido {
+    display: flex;
+    width: 100%;
 }
 
 .mincardImg {
@@ -38,8 +42,12 @@
     background-color: white;
 }
 
+.sobreMi {
+    padding: 10px;
+}
+
 @media (max-width: 768px) {
-    .mincardProy {
+    .mincardAlum {
         width: 100%;
     }
 }
